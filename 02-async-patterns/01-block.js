@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
     res.end('Homepage');
   }
   if (req.url === '/about') {
-    // * BLOCKING CODE:
+    // * BLOCKING / SYNCHRONOUS CODE:
     for (let i = 0; i < 1000; i++) {
       for (let j = 0; j < 1000; j++) {
         console.log(`${i} ${j}`);
