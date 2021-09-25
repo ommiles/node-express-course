@@ -1,3 +1,3 @@
-/node_modules
-/00-content/big.txt
-.DS_Store
+/00-node-tutorial/node_modules
+/00-node-tutorial/00-content/big.txt
+/.DS_Store
