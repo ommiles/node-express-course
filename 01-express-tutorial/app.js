@@ -1,17 +1,12 @@
-// app.get
-// app.post
-// app.put
-// app.delete
-// app.all
-// app.use
-// app.listen
-
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
+app.use(express.static('./public'));
+
 app.get('/', (req, res) => {
-  res.status(200).send('Homepage');
+  res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
 });
 
 app.get('/about', (req, res) => {
