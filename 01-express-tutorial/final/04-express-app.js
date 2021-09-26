@@ -6,7 +6,8 @@ const app = express();
 app.use(express.static('./public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
+  // res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
+  res.sendFile(path.join(__dirname, './navbar-app/index.html'));
 });
 
 app.get('/about', (req, res) => {
